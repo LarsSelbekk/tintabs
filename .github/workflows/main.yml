@@ -1,0 +1,10 @@
+name: Build & push image for master
+
+on:
+  push:
+    branches: ['master']
+
+jobs:
+  build-and-push-image:
+    name: Build and push Docker image
+    uses: larsselbekk/github-actions/.github/workflows/build-and-push-image.yml@main
